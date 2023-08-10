@@ -1,0 +1,25 @@
+.wrapeer {
+    max-width: 70rem;  /* 70rem  = 1120px - 1120/16 = 70rem */
+    margin: 2rem auto;  /* em cima e em baixo ira ter 32px e auto para ficar centralizado na tela */
+    padding: 0 1rem; /* se diminuir a tela para um tamanho menor que 70rem, ele ficara com espaçamento nas laterais de 16px  */ ;
+
+
+    display: grid;
+    grid-template-columns: 256px 1fr;   /* Usamos o grid para criar template de redes, 
+                                        passamos os pixes e 1fr para dizer que a outra coluna grid sera de tamanho flexivel.*/
+    
+    gap: 2rem; /* espaçamento entre os dois de 32px  */
+    align-items: flex-start; /* Fixar o tamanho tanto da sidebar quanto da main, padrao ele ira ter  "align-items: stretch",
+                                ira esticar um ou outro para terem o mesmo tamanho.*/
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+
+    .wrapeer {
+        grid-template-columns: 1fr;
+    }
+}

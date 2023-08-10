@@ -1,0 +1,26 @@
+
+    /*Centralizar: justify-content: center;
+    Padding de 20px - padding: 1.25rem; 
+
+    Cada '1rem' tem 16px
+    0.25rem = 16/4 = 0.25rem
+
+    exemplo 64px = 4rem, 64/16 = 4.
+
+
+
+
+    */
+
+.header {
+    background-color: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    height: 6.25rem;
+}
+
+.header img {
+    height: 3.25rem;
+    
+}
